@@ -11,10 +11,10 @@ const CartItem = ({ onContinueShopping }) => {
     const calculateTotalAmount = () => {
         const total = cart.reduce((sum, item) => {
             const itemCost = calculateTotalCost(item);
-            return sum + parseFloat(itemCost); // Ensure the result is a valid number
+            return sum + parseFloat(itemCost); 
         }, 0);
     
-        return total.toFixed(2); // Apply toFixed only to the final total
+        return total.toFixed(2); 
     };
     
 
